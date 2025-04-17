@@ -12,10 +12,7 @@ Contains input datasets and code for calculating and visualizing Principal Coord
 
 
 -**Figures 4 and 5**
-Contains input datasets and code for:
-o	Calculating and visualizing the distribution of marker genes across different taxonomic groups (bubble plots).
-o	Extracting and visualizing the seasonal expression levels (winter vs. summer) of marker genes, including metabolic genes and conserved proteins (box plots).
-Calculations were performed using CoverM software. Detailed methods and parameters are provided in the Methods section.
+Contains input datasets and code for Calculating and visualizing the distribution of marker genes across different taxonomic groups (bubble plots) and extracting and visualizing the seasonal expression levels (winter vs. summer) of marker genes, including metabolic genes and conserved proteins (box plots). Calculations were performed using CoverM software. Detailed methods and parameters are provided in the Methods section.
 
 
 -**Figure 6**
