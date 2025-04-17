@@ -1,0 +1,18 @@
+source activate sortmerrna
+cd /public/project/HYHSCSMAR20230504MP/MT/6_removerRNA
+for i in ;do
+sortmerna \
+--ref /mnt/data/software/miniconda3/envs/sortmerna/database/silva-bac-16s-id90.fasta \
+--ref /mnt/data/software/miniconda3/envs/sortmerna/database/silva-arc-16s-id95.fasta \
+--workdir /public/project/HYHSCSMAR20230504MP/MT/6_removerRNA/workdir/${i} \
+--reads /public/project/HYHSCSMAR20230504MP/MT/3_decontamination/1_output/${i}-clean_1.fastq \
+--reads /public/project/HYHSCSMAR20230504MP/MT/3_decontamination/1_output/${i}-clean_2.fastq \
+--idx-dir /mnt/data1/project/HYHseason230215/2_16s/testsortmerna/idx \
+--sam \
+--num_alignments 1 \
+--aligned ${i}_rRNA \
+-e 1e-05 \
+--paired_in \
+--fastq \
+--out2
+done
